@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Explanation is 4 sentences or fewer", "passed": false, "evidence": "Core explanation spans ~7 sentences across 3 paragraphs. Tight writing but exceeds limit."},
+    {"text": "Response uses an analogy or concrete example (not a technical definition)", "passed": true, "evidence": "Python RAM analogy: 'Think of it like RAM for a conversation.'"},
+    {"text": "Response returns to the lesson task after explaining — does not go on a tangent", "passed": true, "evidence": "'Back to the task: that's exactly what CLAUDE.md solves.'"},
+    {"text": "Response does NOT start with 'Great question!'", "passed": true, "evidence": "Starts with 'Think of it like RAM...'"},
+    {"text": "Response does NOT condescend or over-explain in a way that assumes the user is not a developer", "passed": true, "evidence": "Uses Python-specific analogy. No bullet-point breakdowns. Peer-level framing."}
+  ],
+  "summary": {"passed": 4, "failed": 1, "total": 5, "pass_rate": 0.8}
+}

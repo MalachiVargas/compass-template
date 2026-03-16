@@ -1,0 +1,12 @@
+{
+  "eval_id": 4,
+  "eval_name": "jargon-explanation",
+  "prompt": "I don't get it. What even is a context window? You keep mentioning it but I have no idea what that means.",
+  "assertions": [
+    "Explanation is 4 sentences or fewer",
+    "Response uses an analogy or concrete example (not a technical definition)",
+    "Response returns to the lesson task after explaining — does not go on a tangent",
+    "Response does NOT start with 'Great question!'",
+    "Response does NOT condescend or over-explain in a way that assumes the user is not a developer"
+  ]
+}

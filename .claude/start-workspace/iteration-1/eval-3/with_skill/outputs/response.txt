@@ -1,0 +1,3 @@
+Twelve years of Go and Rust, distributed systems at scale — that's a solid foundation. You already think in terms of concurrency, fault tolerance, and systems boundaries, which actually maps really well to how Claude Code works best.
+
+What's the most tedious or annoying part of your current dev workflow? The thing where you keep thinking — there has to be a better way to do this.

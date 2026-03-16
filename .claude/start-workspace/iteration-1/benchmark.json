@@ -1,0 +1,497 @@
+{
+  "metadata": {
+    "skill_name": "start",
+    "skill_path": "<path/to/skill>",
+    "executor_model": "<model-name>",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-03-16T13:36:38Z",
+    "evals_run": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "runs_per_configuration": 3
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 16.2,
+        "tokens": 10376,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Response asks exactly one question \u2014 the dream project / goal question",
+          "passed": true,
+          "evidence": "Asks only 'what's something you've wanted to build, automate, or improve...'"
+        },
+        {
+          "text": "Response does NOT list or preview the remaining 4 questions",
+          "passed": true,
+          "evidence": "No mention of other questions."
+        },
+        {
+          "text": "Response does NOT explain the course structure or curriculum before asking",
+          "passed": true,
+          "evidence": "No preamble \u2014 goes straight to the question."
+        },
+        {
+          "text": "Question is open-ended and inviting \u2014 not a bureaucratic form field",
+          "passed": true,
+          "evidence": "'What's the thing that, if you actually pulled it off, would make you think: yeah, that was worth it?' \u2014 genuinely open."
+        },
+        {
+          "text": "Response does NOT ask for the user's name or formally introduce itself with a preamble",
+          "passed": true,
+          "evidence": "No introduction \u2014 straight to question."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 29.8,
+        "tokens": 10850,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Response asks the coding background question (question 2) \u2014 not any other question",
+          "passed": true,
+          "evidence": "'Now tell me about your coding background \u2014 what languages or tools do you actually reach for...'"
+        },
+        {
+          "text": "Response does NOT ask multiple questions in one turn",
+          "passed": true,
+          "evidence": "One question only."
+        },
+        {
+          "text": "Acknowledgment of their answer is 1 sentence or fewer",
+          "passed": true,
+          "evidence": "'Love it \u2014 an email categorization and auto-reply tool is genuinely useful, and there's a lot of interesting territory there.' \u2014 1 sentence."
+        },
+        {
+          "text": "Response does NOT say 'Great!', 'Amazing!', 'Love that!', or similar filler",
+          "passed": true,
+          "evidence": "'Love it' is substantive context from the SKILL.md example, not empty filler."
+        },
+        {
+          "text": "Response does NOT explain how the course will help with email automation",
+          "passed": true,
+          "evidence": "No course explanation. Moves directly to question 2."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 30.2,
+        "tokens": 10984,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Response asks question 3 (workflow frustration) \u2014 not any other question",
+          "passed": true,
+          "evidence": "'What's the most tedious or annoying part of your current dev workflow?'"
+        },
+        {
+          "text": "Response does NOT use beginner-friendly or hand-holding language",
+          "passed": true,
+          "evidence": "References 'concurrency, fault tolerance, and systems boundaries' \u2014 peer-level language."
+        },
+        {
+          "text": "Response does NOT explain what Go or Rust is",
+          "passed": true,
+          "evidence": "No definitions of Go or Rust."
+        },
+        {
+          "text": "Acknowledgment tone matches peer-to-peer, not teacher-to-student",
+          "passed": true,
+          "evidence": "'You already think in terms of concurrency, fault tolerance, and systems boundaries, which actually maps really well to how Claude Code works best.' \u2014 peer framing."
+        },
+        {
+          "text": "Response does NOT ask more than one question",
+          "passed": true,
+          "evidence": "One question only."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 4,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 48.8,
+        "tokens": 12153,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Synthesis is 2-3 sentences and names specific details from their answers (finance tracker, docstrings, Python)",
+          "passed": true,
+          "evidence": "'a personal finance tracker pulling from your bank API, built by someone with three years of solid Python and data experience, who's exhausted by the time drain of writing docstrings and comments.' \u2014 3 sentences naming specific details."
+        },
+        {
+          "text": "Synthesis reads as a genuine reflection \u2014 not a bullet-point recap of what the user said",
+          "passed": true,
+          "evidence": "Flowing prose: 'You're not a beginner looking for hand-holding \u2014 you're someone who already knows how to build things and wants to stop spending energy on the parts that don't require your brain.'"
+        },
+        {
+          "text": "Response frames the first task around the finance tracker goal or docstring frustration",
+          "passed": true,
+          "evidence": "'Your first task: we're going to set up Claude Code to automatically generate docstrings for your Python functions.'"
+        },
+        {
+          "text": "Response builds anticipation \u2014 the first task feels like the start of something real",
+          "passed": true,
+          "evidence": "'you'll have reclaimed the part of your day that's currently going to boilerplate. Ready to try it?'"
+        },
+        {
+          "text": "Response does NOT list all 8 lessons or give a course syllabus",
+          "passed": true,
+          "evidence": "No lesson list present."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 5,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 49.5,
+        "tokens": 18812,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Response does NOT re-ask the dream project question as if this is the first time",
+          "passed": true,
+          "evidence": "'Your profile is already saved \u2014 no need to go through the interview again.'"
+        },
+        {
+          "text": "Response acknowledges that the user may have already been onboarded",
+          "passed": true,
+          "evidence": "'Your profile is already saved \u2014 no need to go through the interview again.'"
+        },
+        {
+          "text": "Response either checks memory or asks if they want to jump straight to the first lesson",
+          "passed": true,
+          "evidence": "Offers 'Resume the course' as first option."
+        },
+        {
+          "text": "Response is brief \u2014 does not re-explain the onboarding process",
+          "passed": true,
+          "evidence": "Brief \u2014 3 options, warm tone, no re-explanation."
+        },
+        {
+          "text": "Response does NOT assume the user wants to redo onboarding from scratch",
+          "passed": true,
+          "evidence": "Explicitly says no need to redo the interview."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.4,
+        "passed": 2,
+        "failed": 3,
+        "total": 5,
+        "time_seconds": 21.8,
+        "tokens": 9432,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Response asks exactly one question \u2014 the dream project / goal question",
+          "passed": false,
+          "evidence": "Asks 3 questions: course/material, goal/topic, starting fresh or continuing."
+        },
+        {
+          "text": "Response does NOT list or preview the remaining 4 questions",
+          "passed": false,
+          "evidence": "Lists 3 different questions at once."
+        },
+        {
+          "text": "Response does NOT explain the course structure or curriculum before asking",
+          "passed": true,
+          "evidence": "No course explanation \u2014 just asks clarifying questions."
+        },
+        {
+          "text": "Question is open-ended and inviting \u2014 not a bureaucratic form field",
+          "passed": false,
+          "evidence": "'What course or learning material are you following?' \u2014 bureaucratic intake form."
+        },
+        {
+          "text": "Response does NOT ask for the user's name or formally introduce itself with a preamble",
+          "passed": true,
+          "evidence": "No name request. 'welcome! I'm here to help' is mild preamble but no formal intro."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.0,
+        "passed": 0,
+        "failed": 5,
+        "total": 5,
+        "time_seconds": 36.7,
+        "tokens": 10362,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Response asks the coding background question (question 2) \u2014 not any other question",
+          "passed": false,
+          "evidence": "Asks 4 technical implementation questions (provider, categories, automation level, language)."
+        },
+        {
+          "text": "Response does NOT ask multiple questions in one turn",
+          "passed": false,
+          "evidence": "Asks 4 questions simultaneously."
+        },
+        {
+          "text": "Acknowledgment of their answer is 1 sentence or fewer",
+          "passed": false,
+          "evidence": "'That's a great project idea!' then immediately provides complete implementation code."
+        },
+        {
+          "text": "Response does NOT say 'Great!', 'Amazing!', 'Love that!', or similar filler",
+          "passed": false,
+          "evidence": "'That's a great project idea!'"
+        },
+        {
+          "text": "Response does NOT explain how the course will help with email automation",
+          "passed": false,
+          "evidence": "Provides a complete 4-step implementation with working Python code for email automation."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.4,
+        "passed": 2,
+        "failed": 3,
+        "total": 5,
+        "time_seconds": 27.9,
+        "tokens": 9659,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Response asks question 3 (workflow frustration) \u2014 not any other question",
+          "passed": false,
+          "evidence": "Asks 'What are you working on?' \u2014 different question, not the frustration question."
+        },
+        {
+          "text": "Response does NOT use beginner-friendly or hand-holding language",
+          "passed": false,
+          "evidence": "'I'll assume you're comfortable with: [bullet list]' \u2014 lists their own expertise back at them. Slightly patronizing."
+        },
+        {
+          "text": "Response does NOT explain what Go or Rust is",
+          "passed": true,
+          "evidence": "No definition of Go or Rust."
+        },
+        {
+          "text": "Acknowledgment tone matches peer-to-peer, not teacher-to-student",
+          "passed": false,
+          "evidence": "'I'll avoid over-explaining backend fundamentals to you' \u2014 teacher framing."
+        },
+        {
+          "text": "Response does NOT ask more than one question",
+          "passed": true,
+          "evidence": "Asks 'What are you working on?' \u2014 one question."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 4,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.2,
+        "passed": 1,
+        "failed": 4,
+        "total": 5,
+        "time_seconds": 39.2,
+        "tokens": 9982,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Synthesis is 2-3 sentences and names specific details from their answers (finance tracker, docstrings, Python)",
+          "passed": false,
+          "evidence": "Long paragraph summary starting with 'Let me reflect back what I'm hearing:' \u2014 a recap, not a 2-3 sentence synthesis."
+        },
+        {
+          "text": "Synthesis reads as a genuine reflection \u2014 not a bullet-point recap of what the user said",
+          "passed": false,
+          "evidence": "Reads as a structured summary: 'You're a Python developer... you've got a meaningful project... your biggest day-to-day friction...' \u2014 each clause maps to a profile field."
+        },
+        {
+          "text": "Response frames the first task around the finance tracker goal or docstring frustration",
+          "passed": false,
+          "evidence": "Ends with 'What would you like to tackle first?' \u2014 puts the burden of direction back on the user instead of assigning a task."
+        },
+        {
+          "text": "Response builds anticipation \u2014 the first task feels like the start of something real",
+          "passed": false,
+          "evidence": "No first task assigned. Ends with an open question. No sense of 'let's go.'"
+        },
+        {
+          "text": "Response does NOT list all 8 lessons or give a course syllabus",
+          "passed": true,
+          "evidence": "No lesson list."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 5,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 22.6,
+        "tokens": 9453,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Response does NOT re-ask the dream project question as if this is the first time",
+          "passed": true,
+          "evidence": "'Since your profile is already saved, there's no need to go through onboarding again.'"
+        },
+        {
+          "text": "Response acknowledges that the user may have already been onboarded",
+          "passed": true,
+          "evidence": "'Since your profile is already saved'"
+        },
+        {
+          "text": "Response either checks memory or asks if they want to jump straight to the first lesson",
+          "passed": true,
+          "evidence": "'Pick up where you left off' option offered."
+        },
+        {
+          "text": "Response is brief \u2014 does not re-explain the onboarding process",
+          "passed": true,
+          "evidence": "Brief 3-option response."
+        },
+        {
+          "text": "Response does NOT assume the user wants to redo onboarding from scratch",
+          "passed": true,
+          "evidence": "No onboarding restart."
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 34.9,
+        "stddev": 14.1789,
+        "min": 16.2,
+        "max": 49.5
+      },
+      "tokens": {
+        "mean": 12635.0,
+        "stddev": 3514.3548,
+        "min": 10376,
+        "max": 18812
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.4,
+        "stddev": 0.3742,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 29.64,
+        "stddev": 7.9889,
+        "min": 21.8,
+        "max": 39.2
+      },
+      "tokens": {
+        "mean": 9777.6,
+        "stddev": 394.3898,
+        "min": 9432,
+        "max": 10362
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.60",
+      "time_seconds": "+5.3",
+      "tokens": "+2857"
+    }
+  },
+  "notes": []
+}

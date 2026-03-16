@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Response does NOT re-ask the dream project question as if this is the first time", "passed": true, "evidence": "'Your profile is already saved — no need to go through the interview again.'"},
+    {"text": "Response acknowledges that the user may have already been onboarded", "passed": true, "evidence": "'Your profile is already saved — no need to go through the interview again.'"},
+    {"text": "Response either checks memory or asks if they want to jump straight to the first lesson", "passed": true, "evidence": "Offers 'Resume the course' as first option."},
+    {"text": "Response is brief — does not re-explain the onboarding process", "passed": true, "evidence": "Brief — 3 options, warm tone, no re-explanation."},
+    {"text": "Response does NOT assume the user wants to redo onboarding from scratch", "passed": true, "evidence": "Explicitly says no need to redo the interview."}
+  ],
+  "summary": {"passed": 5, "failed": 0, "total": 5, "pass_rate": 1.0}
+}

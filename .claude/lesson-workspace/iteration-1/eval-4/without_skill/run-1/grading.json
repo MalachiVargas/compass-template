@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Explanation is 4 sentences or fewer", "passed": false, "evidence": "Long response with bullet-point breakdown, token definition, practical example. ~250 words."},
+    {"text": "Response uses an analogy or concrete example (not a technical definition)", "passed": true, "evidence": "Book with 50 pages analogy."},
+    {"text": "Response returns to the lesson task after explaining — does not go on a tangent", "passed": false, "evidence": "Ends with 'Does that help clarify it? Happy to go deeper!' — no return to lesson."},
+    {"text": "Response does NOT start with 'Great question!'", "passed": false, "evidence": "Starts with 'Great question!'"},
+    {"text": "Response does NOT condescend or over-explain in a way that assumes the user is not a developer", "passed": false, "evidence": "Defines 'tokens' inline, uses bullet points with bold headers, explains memory management basics."}
+  ],
+  "summary": {"passed": 2, "failed": 3, "total": 5, "pass_rate": 0.4}
+}

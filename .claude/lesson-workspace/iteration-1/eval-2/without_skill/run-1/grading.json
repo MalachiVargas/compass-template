@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Explanation of Glob and Read is 4 sentences or fewer", "passed": false, "evidence": "Long multi-paragraph explanation with numbered steps."},
+    {"text": "Response uses a concrete analogy or plain-language example rather than technical jargon", "passed": true, "evidence": "'like a new developer joining a team' analogy."},
+    {"text": "Response delivers a debrief — names the concept (tool use, agentic navigation, or similar)", "passed": false, "evidence": "Explains mechanics but never names or frames the concept as a learning milestone."},
+    {"text": "Response asks if user is ready to advance to the next lesson", "passed": false, "evidence": "No mention of advancing. No lesson structure."},
+    {"text": "Response does NOT start with 'Great question!' or similar filler praise", "passed": false, "evidence": "Starts with 'Great question!'"}
+  ],
+  "summary": {"passed": 2, "failed": 3, "total": 5, "pass_rate": 0.4}
+}

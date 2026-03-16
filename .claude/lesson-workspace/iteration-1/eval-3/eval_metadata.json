@@ -1,0 +1,12 @@
+{
+  "eval_id": 3,
+  "eval_name": "resume-from-lesson-5",
+  "prompt": "I've done lessons 1 through 4 already. I'm on lesson 5. My background: I do fullstack TypeScript, I hate writing PR descriptions, I've been using Claude Code casually for a month. Run lesson 5.",
+  "assertions": [
+    "Response covers lesson 5 content (custom commands, .claude/commands/ directory)",
+    "Response does NOT recap or re-explain lessons 1-4",
+    "Task or framing references PR descriptions or TypeScript",
+    "Response does NOT explain what a slash command is as if the user has never heard of one",
+    "Task difficulty is intermediate — not a beginner 'try this simple thing' framing"
+  ]
+}

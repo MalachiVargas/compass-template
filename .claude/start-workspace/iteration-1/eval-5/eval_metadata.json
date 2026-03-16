@@ -1,0 +1,12 @@
+{
+  "eval_id": 5,
+  "eval_name": "returning-user",
+  "prompt": "/start — but I already did this onboarding before. My profile is saved.",
+  "assertions": [
+    "Response does NOT re-ask the dream project question as if this is the first time",
+    "Response acknowledges that the user may have already been onboarded",
+    "Response either checks memory or asks if they want to jump straight to the first lesson",
+    "Response is brief — does not re-explain the onboarding process",
+    "Response does NOT assume the user wants to redo onboarding from scratch"
+  ]
+}

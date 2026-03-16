@@ -1,0 +1,12 @@
+{
+  "eval_id": 1,
+  "eval_name": "first-lesson-personalization",
+  "prompt": "I just finished /start. My dream project is a personal finance dashboard. I write Python mostly, been coding for 5 years. My biggest frustration is manually copying data between spreadsheets. I've never used Claude Code before. I'm excited about automating repetitive stuff. Run my first lesson.",
+  "assertions": [
+    "Response does NOT explain what Glob, Read, or tool use is before assigning the task",
+    "Response assigns a concrete task for the user to attempt (not a lecture)",
+    "Task or framing mentions Python, finance dashboard, or spreadsheet frustration",
+    "Response does NOT list all 8 lessons or provide a course syllabus",
+    "Response ends waiting for the user to try — does not immediately walk through the answer"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Response acknowledges completion with genuine enthusiasm (not a form-letter congratulations)", "passed": true, "evidence": "'Eight lessons. Done. That's actually significant — most people who start something like this don't finish it.'"},
+    {"text": "Response asks about going deeper on a specific topic OR applying something to their workflow", "passed": true, "evidence": "'Is there one thing from the course you want to go deeper on? Or one thing you're going to try in your real workflow this week?'"},
+    {"text": "Response does NOT suggest restarting lessons", "passed": true, "evidence": "No mention of restarting."},
+    {"text": "Response does NOT provide a summary or recap of all 8 lessons", "passed": false, "evidence": "Includes a numbered 1-8 recap of all lesson topics before the closing question."},
+    {"text": "Response is brief — 3-5 sentences, not a lengthy graduation speech", "passed": false, "evidence": "Response is ~15 sentences including the 8-item recap list."}
+  ],
+  "summary": {"passed": 3, "failed": 2, "total": 5, "pass_rate": 0.6}
+}

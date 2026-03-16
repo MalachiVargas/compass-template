@@ -1,0 +1,21 @@
+Great question — here's what actually happened under the hood when you asked "what does this project do."
+
+When Claude receives a question like that about a codebase, it doesn't already know the answer. It has to go discover it, just like a new developer joining a team would. So it uses tools to explore the filesystem.
+
+Here's the sequence of what likely happened:
+
+1. Glob was used to find files. Glob is a pattern-matching tool that scans the directory structure for files matching certain patterns — things like "**/*.py", "**/*.ts", "package.json", "README.*", etc. This gives Claude a map of what's in the project: what languages are used, what the folder structure looks like, whether there's a config file, a manifest, a build system, and so on.
+
+2. Read was used to open specific files. Once Glob identified the interesting files, Claude used Read to actually look inside them. It probably read things like:
+   - package.json or pyproject.toml (to see the project name, description, dependencies)
+   - README or README.md (if one existed, for a human-written summary)
+   - Main entry point files (index.js, main.py, app.ts, etc.)
+   - Config files that reveal how the app is structured
+
+3. Claude synthesized what it found into an answer. After reading those files, it pieced together what the project does based on the actual code and configuration — not a guess.
+
+Why does it work this way? Claude doesn't have your files in memory ahead of time. It only knows what it reads during the conversation. The tools (Glob, Read, and others) are how it bridges that gap — they let it actively investigate rather than just guess.
+
+What you saw — Claude "poking around" — is exactly right. It was doing real exploration, not performing. Every Glob call was a search, every Read call was opening an actual file. The answer it gave you was grounded in what it actually found in your project.
+
+That's also why the answer can be surprisingly accurate even for projects Claude has never seen before. It's not drawing on training data about your specific project — it's reading your actual files live.

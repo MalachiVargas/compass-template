@@ -1,0 +1,96 @@
+{
+  "skill_name": "lesson",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I just finished /start. My dream project is a personal finance dashboard. I write Python mostly, been coding for 5 years. My biggest frustration is manually copying data between spreadsheets. I've never used Claude Code before. I'm excited about automating repetitive stuff. Run my first lesson.",
+      "expected_output": "Claude reads the user profile, starts lesson 1 (architecture), frames it around the finance dashboard goal, assigns a beginner task (ask Claude 'what does this project do' without pasting code), and waits for the user to try rather than explaining the concept upfront.",
+      "files": [],
+      "expectations": [
+        "Claude does NOT explain the concept of tool use before assigning the task",
+        "The task is framed around the user's Python background or finance dashboard goal",
+        "Claude assigns the beginner-level task from lesson 1 (open a project, ask 'what does this do')",
+        "Claude waits for the user to try rather than walking through the answer",
+        "Claude does NOT list all 8 lessons or give a syllabus overview"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "okay I tried it — I opened my project and asked Claude 'what does this project do'. It used Glob and Read. I could see it poking around. That was actually kind of cool. What happened exactly?",
+      "expected_output": "Claude answers the question directly and concisely — explains that it used Glob to find files and Read to examine them, drawing on the user's Python background to make it concrete. Then transitions to debrief, naming what they just learned, before asking if they're ready to move on.",
+      "files": [],
+      "expectations": [
+        "Claude explains Glob and Read in plain terms without being condescending",
+        "Explanation is concise — not a lecture, a response to what was asked",
+        "Claude ties the explanation back to the user's project context or background",
+        "Claude delivers the debrief (names the concept) after answering",
+        "Claude asks if the user is ready to advance to lesson 2"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I've done lessons 1 through 4 already. I'm on lesson 5. My background: I do fullstack TypeScript, I hate writing PR descriptions, I've been using Claude Code casually for a month. Run lesson 5.",
+      "expected_output": "Claude skips straight to lesson 5 (custom commands), skips basics they already know, frames the task around automating PR descriptions since that's their stated frustration, and assigns an intermediate-level task since they have a month of Claude Code experience.",
+      "files": [],
+      "expectations": [
+        "Claude does NOT restart from lesson 1 or recap previous lessons",
+        "Claude assigns lesson 5 content (custom commands, .claude/commands/ directory)",
+        "The task or framing references PR descriptions or the TypeScript background",
+        "Claude picks intermediate difficulty, not beginner",
+        "Claude does NOT explain what a slash command is as if the user has never heard of one"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "I don't get it. What even is a context window? You keep mentioning it but I have no idea what that means.",
+      "expected_output": "Claude gives a brief, jargon-free explanation using an analogy appropriate to the user's background. Does not lecture. Gets back to the lesson task promptly after answering.",
+      "files": [],
+      "expectations": [
+        "Explanation is brief — 2-4 sentences, not a paragraph essay",
+        "Uses an analogy or concrete example rather than a technical definition",
+        "Does not condescend or over-explain",
+        "Returns to the lesson task after answering — does not go on a tangent",
+        "Does not start the response with 'Great question!'"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Okay I did the task — I gave Claude a vague instruction and watched it navigate. It searched for the right files and found what I needed without me explaining anything. I get it now.",
+      "expected_output": "Claude debriefs briefly, then asks one short question derived from the lesson's Big Idea — something that checks whether the learner understands why Claude navigates rather than just recalling what happened. Only after the learner answers does Claude ask if they're ready to advance.",
+      "files": [],
+      "expectations": [
+        "Claude does NOT immediately ask if they're ready to move on after the debrief",
+        "Claude asks exactly one comprehension check question before advancing",
+        "The question targets understanding of the concept, not recall of what the user just did",
+        "The question is derived from the lesson's Big Idea or Debrief — not a generic quiz question",
+        "Claude advances only after the learner responds to the check question"
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Can Claude Code work with voice input? Like can I speak to it instead of typing?",
+      "expected_output": "Claude answers the question but briefly flags that it's drawing on general knowledge, not the course material. Then returns to the lesson.",
+      "files": [],
+      "expectations": [
+        "Claude answers the question — does not refuse or deflect",
+        "Claude flags that this is outside the course source material (e.g. 'this isn't covered in the course notes but...')",
+        "The flag is brief — one phrase, not a disclaimer paragraph",
+        "Claude returns to the lesson after answering — does not go on a tangent",
+        "Claude does NOT pretend the answer came from the course"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "I finished all 8 lessons. I learned a ton. What now?",
+      "expected_output": "Claude celebrates genuinely (not performatively), then asks which topic they want to go deeper on or what they're going to apply in their real workflow this week. Does not suggest restarting the course or assign more lessons.",
+      "files": [],
+      "expectations": [
+        "Claude acknowledges course completion with genuine enthusiasm, not a form letter",
+        "Claude asks about going deeper on one topic OR applying something this week",
+        "Claude does NOT suggest restarting lessons",
+        "Claude does NOT give a long summary of everything covered",
+        "Response is brief — this is a conversation transition, not a graduation speech"
+      ]
+    }
+  ]
+}

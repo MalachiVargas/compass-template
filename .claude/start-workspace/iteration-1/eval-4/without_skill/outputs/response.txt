@@ -1,0 +1,19 @@
+Thanks for sharing all of that — it gives me a really clear picture of where you're coming from and what you want to get out of this.
+
+Let me reflect back what I'm hearing:
+
+You're a Python developer with solid data experience (3 years), and you've got a meaningful project in mind — a personal finance tracker that talks to your bank's API. That's a great target: it's real, it's useful to you personally, and it has enough moving parts (API integration, data processing, probably some storage and maybe visualization) to make it genuinely interesting to build.
+
+Your biggest day-to-day friction right now is documentation overhead — writing docstrings and comments is eating into the time you'd rather spend on actual problem-solving. That's a really common pain point, and it's one where Claude Code can genuinely help.
+
+You've touched Claude Code a couple of times and felt the potential but haven't found your footing yet. That makes sense — it's a tool that rewards knowing what to ask for, and that takes a little calibration.
+
+Here's how I'd suggest thinking about this session:
+
+**Start with what drains you most.** Since docstrings are your biggest frustration, let's make that feel effortless first. Claude Code is very good at generating NumPy/Google-style docstrings, inferring parameter types from context, and adding inline comments that explain the *why* rather than just the *what*. You can paste a function and say "document this" and get something solid in seconds.
+
+**Then connect it to your finance tracker.** As you build out the project — pulling transactions from the bank API, cleaning and categorizing the data — we can work on that together. Claude Code can help with the boilerplate (API client setup, error handling, data models) so your energy goes into the logic that's actually interesting to you.
+
+**On "not knowing what you're doing" with Claude Code** — the most useful mental model is to treat it like a skilled collaborator who needs clear context. The more specific you are about what you're building and what you want, the better the output. Vague prompts get vague results; specific prompts get working code. We can practice that as we go.
+
+What would you like to tackle first — want to start with a piece of the finance tracker, or would it be more useful to first get comfortable with how to use Claude Code for documentation on some existing code you have?

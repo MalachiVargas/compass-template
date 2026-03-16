@@ -1,0 +1,12 @@
+{
+  "eval_id": 1,
+  "eval_name": "basic-kickoff",
+  "prompt": "/start",
+  "assertions": [
+    "Response asks exactly one question — the dream project / goal question",
+    "Response does NOT list or preview the remaining 4 questions",
+    "Response does NOT explain the course structure or curriculum before asking",
+    "Question is open-ended and inviting — not a bureaucratic form field",
+    "Response does NOT ask for the user's name or formally introduce itself with a preamble"
+  ]
+}

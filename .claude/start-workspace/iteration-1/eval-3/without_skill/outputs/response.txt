@@ -1,0 +1,13 @@
+That's a solid background — 12 years of backend engineering with Go and Rust, working on distributed systems, puts you firmly in the "knows what's actually happening under the hood" category.
+
+Good to know you're light on frontend. That context helps me calibrate how I explain things. I'll assume you're comfortable with:
+
+- Concurrency models, memory management, systems-level thinking
+- API design, service boundaries, data consistency tradeoffs
+- Distributed systems concepts (consensus, replication, failure modes)
+
+And I'll avoid over-explaining backend fundamentals to you.
+
+For frontend, if it comes up, I'll be more explicit — covering things like the component model, state management, the browser rendering pipeline, or whatever's relevant, without assuming prior familiarity. Just let me know how deep you want to go on any given topic.
+
+What are you working on?

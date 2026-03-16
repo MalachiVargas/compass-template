@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Response asks exactly one question — the dream project / goal question", "passed": false, "evidence": "Asks 3 questions: course/material, goal/topic, starting fresh or continuing."},
+    {"text": "Response does NOT list or preview the remaining 4 questions", "passed": false, "evidence": "Lists 3 different questions at once."},
+    {"text": "Response does NOT explain the course structure or curriculum before asking", "passed": true, "evidence": "No course explanation — just asks clarifying questions."},
+    {"text": "Question is open-ended and inviting — not a bureaucratic form field", "passed": false, "evidence": "'What course or learning material are you following?' — bureaucratic intake form."},
+    {"text": "Response does NOT ask for the user's name or formally introduce itself with a preamble", "passed": true, "evidence": "No name request. 'welcome! I'm here to help' is mild preamble but no formal intro."}
+  ],
+  "summary": {"passed": 2, "failed": 3, "total": 5, "pass_rate": 0.4}
+}

@@ -1,0 +1,70 @@
+{
+  "skill_name": "start",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "/start",
+      "expected_output": "Claude asks only the first onboarding question — the dream project question — and waits. Does NOT list all 5 questions. Does NOT explain the course structure. Does NOT ask multiple questions at once.",
+      "files": [],
+      "expectations": [
+        "Claude asks exactly one question — the dream project question",
+        "Claude does NOT list or preview the other 4 questions",
+        "Claude does NOT explain what the course covers before asking",
+        "The question is open-ended and inviting, not bureaucratic",
+        "Claude does NOT ask for name or introduce itself formally"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I want to build a tool that automatically categorizes my emails and drafts replies",
+      "expected_output": "Claude briefly acknowledges the answer in an interested way, then asks the second question (coding background) — not all remaining questions at once. The acknowledgment is genuine, not sycophantic.",
+      "files": [],
+      "expectations": [
+        "Claude asks the coding background question next (question 2)",
+        "Claude does NOT skip ahead or ask multiple questions at once",
+        "The acknowledgment of their answer is brief — 1 sentence max",
+        "Claude does NOT say 'Great!' or 'Amazing!' or similar filler",
+        "Claude does NOT pivot to explaining how the course will help with email tools"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I've been a software engineer for 12 years. Mostly backend — Go and Rust. I've built distributed systems at scale. I barely write frontend.",
+      "expected_output": "Claude acknowledges the deep technical background briefly, then asks the frustration question (question 3). The acknowledgment should reflect that this person is clearly an expert — no hand-holding language.",
+      "files": [],
+      "expectations": [
+        "Claude asks question 3 (biggest workflow frustration) next",
+        "Claude does NOT use beginner-friendly language or over-explain anything",
+        "Claude does NOT pivot to explaining what Go or Rust is",
+        "The tone matches someone talking to a senior engineer",
+        "Claude does NOT ask more than one question"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Here's my full profile: Dream project — a personal finance tracker that pulls from my bank API. Background — Python, 3 years, mostly data stuff. Frustration — I spend way too long writing docstrings and comments. Claude Code experience — used it a couple times, feels powerful but I don't know what I'm doing. Excitement — I want to stop doing the repetitive stuff so I can focus on the actual hard problems.",
+      "expected_output": "Claude synthesizes all 5 answers (even though they were given at once), produces a genuine 2-3 sentence personal reflection that names what it heard, then frames the first lesson task around the user's Python background and finance tracker goal. Makes the opening feel exciting.",
+      "files": [],
+      "expectations": [
+        "Claude produces a genuine synthesis that names specific details from their answers",
+        "The synthesis is 2-3 sentences — not a bullet-point recap",
+        "Claude frames the first task around the finance tracker or docstring frustration",
+        "Claude builds anticipation — the first task feels like the start of something",
+        "Claude does NOT give a syllabus of all 8 lessons"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "/start — but I already did this onboarding before. My profile is saved.",
+      "expected_output": "Claude recognizes the user has already been onboarded (or asks if they have), and either skips to the first lesson or confirms what it knows about them before proceeding. Does NOT re-run the full 5-question interview.",
+      "files": [],
+      "expectations": [
+        "Claude does NOT re-ask the dream project question as if this is the first time",
+        "Claude acknowledges that onboarding may have already happened",
+        "Claude either checks memory or asks if they want to skip to the first lesson",
+        "Response is brief — not a re-explanation of the onboarding process",
+        "Claude does NOT assume the user wants to redo onboarding"
+      ]
+    }
+  ]
+}

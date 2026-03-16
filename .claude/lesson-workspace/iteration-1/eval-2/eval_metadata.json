@@ -1,0 +1,12 @@
+{
+  "eval_id": 2,
+  "eval_name": "question-answer-debrief",
+  "prompt": "okay I tried it — I opened my project and asked Claude 'what does this project do'. It used Glob and Read. I could see it poking around. That was actually kind of cool. What happened exactly?",
+  "assertions": [
+    "Explanation of Glob and Read is 4 sentences or fewer",
+    "Response uses a concrete analogy or plain-language example rather than technical jargon",
+    "Response delivers a debrief — names the concept (tool use, agentic navigation, or similar)",
+    "Response asks if user is ready to advance to the next lesson",
+    "Response does NOT start with 'Great question!' or similar filler praise"
+  ]
+}

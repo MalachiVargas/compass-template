@@ -1,0 +1,23 @@
+{
+  "question_number": 3,
+  "question_asked": "What's the most tedious or annoying part of your current dev workflow? The thing where you keep thinking — there has to be a better way to do this.",
+  "user_profile_so_far": {
+    "experience_years": 12,
+    "primary_languages": ["Go", "Rust"],
+    "domain": "distributed systems / backend",
+    "frontend_experience": "minimal"
+  },
+  "tone_calibration": {
+    "target": "peer-to-senior-engineer",
+    "acknowledgment_style": "brief and substantive — referenced specific technical concepts (concurrency, fault tolerance, systems boundaries) rather than generic praise",
+    "vocabulary_level": "high — no need to explain technical terms",
+    "avoided": ["over-enthusiasm", "condescension", "filler praise"]
+  },
+  "response_length_chars": 248,
+  "skill_adherence": {
+    "one_question_at_a_time": true,
+    "reacted_to_answer_before_moving_on": true,
+    "used_answer_for_calibration": true,
+    "question_3_correctly_asked": true
+  }
+}

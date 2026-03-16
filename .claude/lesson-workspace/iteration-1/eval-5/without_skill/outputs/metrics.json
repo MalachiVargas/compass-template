@@ -1,0 +1,30 @@
+{
+  "task": "course_completion_response",
+  "condition": "without_skill",
+  "timestamp": "2026-03-16",
+  "response_characteristics": {
+    "tone": "encouraging and practical",
+    "structure": "bullet points with headers",
+    "sections_count": 6,
+    "word_count_approximate": 230,
+    "ends_with_question": true,
+    "personalization": "low — asks for more context at the end",
+    "actionability": "medium-high — provides concrete steps but generic",
+    "emotional_acknowledgment": "brief — one sentence of congratulations",
+    "specificity": "low — no knowledge of what course was taken"
+  },
+  "approach": {
+    "method": "generic best-practices framework",
+    "customization": "none — no course subject known",
+    "follow_up_prompt": true,
+    "frameworks_used": ["reinforce", "apply", "go deeper", "reflect", "share"]
+  },
+  "observations": [
+    "Response is well-structured but generic",
+    "Lacks emotional depth beyond one congratulatory sentence",
+    "Asks clarifying question at the end rather than upfront",
+    "Provides a broad menu of options without prioritizing any",
+    "Does not probe what 'learning a ton' means to the user",
+    "No attempt to understand the user's goals or context before advising"
+  ]
+}

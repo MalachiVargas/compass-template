@@ -1,0 +1,25 @@
+You just finished /start, so let me pick up right where that left off and run your first lesson.
+
+---
+
+Your personal finance dashboard project is a perfect fit for what we're covering today. Before you can automate the stuff that's been annoying you — copying data between spreadsheets, wrangling CSVs — Claude Code needs to be able to navigate your project the same way you do. That's what this lesson is about.
+
+---
+
+**Your Task**
+
+Grab any Python project you have on your machine. Doesn't need to be the finance dashboard — even a small script you wrote a while ago works. If you don't have anything handy, create a folder with two or three Python files (they can be simple).
+
+Then open Claude Code in that directory and type exactly this:
+
+> "What does this project do?"
+
+Don't paste any code. Don't explain anything. Just ask.
+
+After Claude responds, come back here and tell me:
+
+1. What tools did you see it use? (Look for things like Read, Glob, Grep in the output)
+2. What file did it look at first?
+3. Did it get the gist of your project right?
+
+That's it. Go run it and tell me what you saw.

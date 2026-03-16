@@ -1,0 +1,21 @@
+Great question! A "context window" is essentially the amount of text (or information) that I can "see" and work with at any given moment in our conversation.
+
+Think of it like this:
+
+Imagine you're reading a very long book, but you can only ever see a limited number of pages at once — say, 50 pages. Everything outside those 50 pages is invisible to you. You can't reference it, you can't remember it, it simply doesn't exist for you in that moment. That's what a context window is for an AI like me.
+
+More specifically:
+
+- **What goes into the context window**: Everything in our current conversation — your messages, my responses, any documents or code you've shared, and instructions I've been given. It all counts toward the limit.
+
+- **The limit**: Context windows are measured in "tokens" (roughly, chunks of text — a token is about 3-4 characters or 3/4 of a word on average). I have a large context window, but it's still finite.
+
+- **What happens when it fills up**: Older parts of the conversation can "fall out" of the window, meaning I lose access to them. I can't refer back to something I said or you said if it's no longer in my context window. It's not that I'm ignoring it — I literally cannot see it anymore.
+
+- **Why it matters**: If you're working on a long project with me and the conversation gets very long, I might start to "forget" things from earlier in the session. That's the context window at work (or rather, at its limit).
+
+A practical example: If you paste a 50-page document into our chat and we've already been talking for a while, some of our earlier conversation might get pushed out of my context window to make room for the document.
+
+So when someone mentions the context window, they're talking about this finite "view" I have into our conversation. It's one of the key technical constraints of how I work.
+
+Does that help clarify it? Happy to go deeper on any part of this!

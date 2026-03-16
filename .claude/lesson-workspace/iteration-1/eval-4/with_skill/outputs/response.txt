@@ -1,0 +1,11 @@
+Think of it like RAM for a conversation.
+
+When you run a Python script, there's a limit to how much your machine can hold in memory at once. Claude has the same kind of limit — but for text. The context window is the total amount of text (your messages, Claude's replies, any files you've shared) that Claude can "see" at any one time.
+
+Once you exceed it, older stuff starts dropping off — like a sliding window. Claude isn't forgetting on purpose; it literally can't see back that far anymore.
+
+So when I say "context window," I mean: everything currently visible to Claude in this session. The bigger the window, the more it can hold. But every window has an edge.
+
+That's why context management matters — we're learning how to work within that window intentionally, instead of running into its edges by accident.
+
+Back to the task: that's exactly what CLAUDE.md solves. Instead of re-explaining your project every session, you write it once and it loads automatically — always inside the window, always visible.

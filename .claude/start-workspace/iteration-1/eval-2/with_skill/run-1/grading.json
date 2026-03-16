@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Response asks the coding background question (question 2) — not any other question", "passed": true, "evidence": "'Now tell me about your coding background — what languages or tools do you actually reach for...'"},
+    {"text": "Response does NOT ask multiple questions in one turn", "passed": true, "evidence": "One question only."},
+    {"text": "Acknowledgment of their answer is 1 sentence or fewer", "passed": true, "evidence": "'Love it — an email categorization and auto-reply tool is genuinely useful, and there's a lot of interesting territory there.' — 1 sentence."},
+    {"text": "Response does NOT say 'Great!', 'Amazing!', 'Love that!', or similar filler", "passed": true, "evidence": "'Love it' is substantive context from the SKILL.md example, not empty filler."},
+    {"text": "Response does NOT explain how the course will help with email automation", "passed": true, "evidence": "No course explanation. Moves directly to question 2."}
+  ],
+  "summary": {"passed": 5, "failed": 0, "total": 5, "pass_rate": 1.0}
+}

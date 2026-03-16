@@ -1,0 +1,102 @@
+Welcome! It's great to hear you're excited about automating repetitive work — that's one of the most rewarding things you can do with code, and Claude Code is genuinely well-suited for it.
+
+Since you're building toward a personal finance dashboard and your main pain point is manually copying data between spreadsheets, let's make your first lesson practical and directly relevant.
+
+---
+
+LESSON 1: Your First Claude Code Session — Automating a Spreadsheet Task
+
+What you'll learn:
+- How to start a Claude Code session
+- How to describe a task so Claude understands what you need
+- How to get working Python code for a real automation problem
+
+---
+
+STEP 1: Open Claude Code
+
+In your terminal, navigate to a folder where you want to work and run:
+
+    claude
+
+That's it. You'll see an interactive prompt. Claude Code reads your local files, can run code, and iterates with you.
+
+---
+
+STEP 2: Describe Your Problem in Plain Language
+
+You don't need to write perfect prompts. Just describe what you're doing manually. For example:
+
+    "I have two CSV files — one is my bank statement (columns: date, description, amount) and one is my budget tracker (columns: category, monthly_limit, spent_so_far). Every month I manually copy transactions from the bank CSV into the budget tracker. Can you write a Python script to automate this?"
+
+Claude Code will ask clarifying questions if needed and then generate a script. Since you've been coding Python for 5 years, you'll be able to read and tweak whatever it produces.
+
+---
+
+STEP 3: Let Claude Code Run It
+
+Once it generates the script, you can say:
+
+    "Run it on these files and show me the output."
+
+Claude Code can execute Python directly in your environment. You'll see the results immediately.
+
+---
+
+STEP 4: Iterate
+
+If something's off, just say so:
+
+    "The amounts are showing as strings, not numbers. Fix that."
+    "Add a column that shows how much of the budget is remaining."
+
+This back-and-forth is the core workflow. You don't open a new chat — you keep going in the same session.
+
+---
+
+YOUR HOMEWORK (do this now, takes ~10 minutes):
+
+1. Create a folder: mkdir ~/finance-dashboard && cd ~/finance-dashboard
+
+2. Create two small test CSV files. For example:
+
+   bank.csv:
+   date,description,amount
+   2026-03-01,Grocery Store,-85.50
+   2026-03-03,Netflix,-15.99
+   2026-03-05,Paycheck,2500.00
+
+   budget.csv:
+   category,monthly_limit,spent_so_far
+   Groceries,300,0
+   Entertainment,50,0
+   Income,0,0
+
+3. Start Claude Code: claude
+
+4. Paste this prompt:
+   "I have bank.csv and budget.csv in this folder. Write a Python script that reads bank.csv and categorizes each transaction into a category from budget.csv, then updates the spent_so_far column. Use simple keyword matching for now."
+
+5. Watch what happens. Ask it to run the script. See the result.
+
+---
+
+KEY THINGS TO NOTICE:
+
+- Claude Code reads your actual files. It's not guessing at structure.
+- You can ask it to explain any part of the code it writes.
+- If it makes a mistake, correcting it is one sentence.
+- Your 5 years of Python means you can catch issues and guide it precisely — that's a real advantage.
+
+---
+
+WHAT'S NEXT:
+
+Once this basic automation works, the natural next steps for your dashboard are:
+- Connecting to a real bank export (most banks let you download CSV or OFX)
+- Building a simple summary view (pandas + a few print statements, or a Streamlit dashboard)
+- Scheduling the script to run automatically
+
+You're not far from having something genuinely useful. The spreadsheet-copying problem you described is exactly the kind of thing that goes from manual-and-painful to automated-and-invisible in a single afternoon with Claude Code.
+
+Go try the homework. Come back with what happened — we'll build on it.

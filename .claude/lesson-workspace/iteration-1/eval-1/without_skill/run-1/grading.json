@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Response does NOT explain what Glob, Read, or tool use is before assigning the task", "passed": false, "evidence": "Provides a 4-step tutorial ('STEP 1: Open Claude Code', 'STEP 2: Describe Your Problem') before any task attempt."},
+    {"text": "Response assigns a concrete task for the user to attempt (not a lecture)", "passed": true, "evidence": "Has a 'HOMEWORK' section with a task."},
+    {"text": "Task or framing mentions Python, finance dashboard, or spreadsheet frustration", "passed": true, "evidence": "'personal finance dashboard', 'copying data between spreadsheets'"},
+    {"text": "Response does NOT list all 8 lessons or provide a course syllabus", "passed": true, "evidence": "No lesson syllabus."},
+    {"text": "Response ends waiting for the user to try — does not immediately walk through the answer", "passed": false, "evidence": "Homework walks through every step with specific commands, CSV content, and expected outcomes — nothing left for the user to discover."}
+  ],
+  "summary": {"passed": 3, "failed": 2, "total": 5, "pass_rate": 0.6}
+}

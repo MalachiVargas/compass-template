@@ -1,0 +1,31 @@
+{
+  "skill": "start",
+  "iteration": 1,
+  "variant": "with_skill",
+  "scenario": "full-profile-synthesis",
+  "input_mode": "all_five_answers_at_once",
+  "user_profile": {
+    "dream_project": "Personal finance tracker that pulls from bank API",
+    "tech_background": "Python, 3 years, mostly data work",
+    "primary_frustration": "Writing docstrings and comments — too time-consuming",
+    "claude_code_experience": "Used a couple times; finds it powerful but feels uncertain how to use it well",
+    "excitement": "Stop doing repetitive tasks to focus on actual hard problems"
+  },
+  "skill_compliance": {
+    "synthesized_after_all_five": true,
+    "reflection_not_recap": true,
+    "first_task_introduced": true,
+    "first_task_tied_to_frustration": true,
+    "first_task_tied_to_dream_project": true,
+    "anticipation_built": true,
+    "tone_warm_not_formal": true,
+    "acknowledged_what_was_heard": true
+  },
+  "response_structure": {
+    "synthesis_sentences": 3,
+    "reflection_quality": "names frustration, calibrates to experience level, connects to motivation",
+    "first_task": "Set up Claude Code to auto-generate Python docstrings as a repeatable workflow",
+    "closing_question_present": true
+  },
+  "notes": "User is an intermediate Python dev with clear frustration (docstrings) and a concrete dream project (bank API finance tracker). First task targets the frustration directly and ties it to the dream project context. Skipped beginner fundamentals given 3 years of experience and prior Claude Code exposure."
+}

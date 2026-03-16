@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Synthesis is 2-3 sentences and names specific details from their answers (finance tracker, docstrings, Python)", "passed": false, "evidence": "Long paragraph summary starting with 'Let me reflect back what I'm hearing:' — a recap, not a 2-3 sentence synthesis."},
+    {"text": "Synthesis reads as a genuine reflection — not a bullet-point recap of what the user said", "passed": false, "evidence": "Reads as a structured summary: 'You're a Python developer... you've got a meaningful project... your biggest day-to-day friction...' — each clause maps to a profile field."},
+    {"text": "Response frames the first task around the finance tracker goal or docstring frustration", "passed": false, "evidence": "Ends with 'What would you like to tackle first?' — puts the burden of direction back on the user instead of assigning a task."},
+    {"text": "Response builds anticipation — the first task feels like the start of something real", "passed": false, "evidence": "No first task assigned. Ends with an open question. No sense of 'let's go.'"},
+    {"text": "Response does NOT list all 8 lessons or give a course syllabus", "passed": true, "evidence": "No lesson list."}
+  ],
+  "summary": {"passed": 1, "failed": 4, "total": 5, "pass_rate": 0.2}
+}
