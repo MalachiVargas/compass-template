@@ -82,7 +82,6 @@ GitLab, Bitbucket, or any system with a diff you can share works for the core wo
 
 "Code review is one of the first places Claude Code creates real team-level value. What you just did — getting a structured, context-aware review in seconds — is something that normally takes 30 minutes and requires someone not being too busy. The custom command you built is the kind of thing you'd share with your team. That's the scale this lesson points at: not just your workflow, but your team's workflow."
 
-## Connects To
+## Teaches
 
-Lesson 5 (Custom Commands): the `/review-pr` command as a workflow artifact
-Lesson 6 (MCP Servers): GitHub as an MCP integration
+`[github-integration, automated-workflows]`

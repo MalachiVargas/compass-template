@@ -92,9 +92,9 @@ For each lesson, write `courses/{n}-{name}/lessons/{nn}-{slug}.md` with this str
 
 {A closing statement that names what the learner just demonstrated and connects it to the bigger picture}
 
-## Connects To
+## Teaches
 
-{Other lessons this one relates to}
+{Comma-separated list of concept slugs this lesson introduces, e.g. `[concept-a, concept-b]`}
 ```
 
 ### 5. Update `memory/progress.md`
@@ -103,8 +103,10 @@ Add the new course to the progress file:
 ```
 {n}-{name}:
   current_lesson: 1
+  difficulty_tier: ""
   status: not_started
   completed: []
+  mastered_concepts: []
   notes: ""
 ```
 

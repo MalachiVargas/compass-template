@@ -80,7 +80,6 @@ Yes — one global (`~/.claude/CLAUDE.md`) and one per project. Project-level ov
 
 "Context is the medium you and Claude work in. Understanding it isn't about managing a technical limitation — it's about developing a workflow habit. The best Claude Code users think in sessions: what does Claude need to know right now, and what's noise? CLAUDE.md is how you answer that question permanently. `/clear` is how you answer it fresh."
 
-## Connects To
+## Teaches
 
-Lesson 5 (Custom Commands): automating context-loading as a command
-Lesson 8 (Thinking Modes): when extended context is worth the cost
+`[context-windows, claude-md, session-management]`

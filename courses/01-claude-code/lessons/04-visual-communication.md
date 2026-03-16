@@ -54,6 +54,6 @@ Yes — error messages, terminal output, architecture diagrams, data visualizati
 
 "Visual communication is a shortcut that most developers underuse. You just showed Claude a picture and got usable output — no long description, no guessing at what you meant. The instinct is still to describe things in words because that's what we're used to. The habit to build is: when you're about to describe something visual, ask yourself if a screenshot would be faster. Usually it is."
 
-## Connects To
+## Teaches
 
-Lesson 8 (Thinking Modes): using extended thinking for complex visual-to-code translation
+`[visual-input, screenshot-debugging]`

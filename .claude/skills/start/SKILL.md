@@ -71,13 +71,18 @@ Synthesize what you learned into a brief, personal 2-3 sentence summary. Name wh
 
 2. Write `memory/progress.md` in the project root:
    ```
+   last_session: "YYYY-MM-DD"
    current_course: courses/01-claude-code
+
    courses:
      01-claude-code:
        current_lesson: 1
+       difficulty_tier: ""          # beginner | intermediate | advanced
        status: not_started
        completed: []
+       mastered_concepts: []
        notes: ""
    ```
+   Replace `YYYY-MM-DD` with today's date. Infer `difficulty_tier` from their Claude Code experience answer: complete beginner → `beginner`; casual user → `intermediate`; power user → `advanced`. Write it in place of the empty string.
 
 3. Invoke `/lesson` immediately. Do not run lesson 1 yourself — hand off so progress tracking is consistent from the start.

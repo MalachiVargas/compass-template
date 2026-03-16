@@ -109,7 +109,6 @@ Commands are triggered by you. Hooks run automatically on every matching tool ca
 
 "You just automated something — and then made it self-correcting. That's the shift this lesson is about: going from user to builder. Commands are the first place where Claude Code becomes yours. Hooks are where it starts enforcing your standards without you having to think about it. Every command and hook you create is a productivity artifact that compounds over time."
 
-## Connects To
+## Teaches
 
-Lesson 6 (MCP Servers): extending commands with external tool access
-Lesson 7 (GitHub Integration): commands for automating review workflows
+`[slash-commands, hooks, automation]`

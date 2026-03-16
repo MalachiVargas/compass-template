@@ -81,7 +81,6 @@ It uses your prompt as a signal. File names you mention, function names, error m
 
 "What you just saw is the foundation of everything. Claude Code isn't an autocomplete — it's an agent that navigates your codebase the same way you do, just faster. Every other lesson builds on this: tools for multi-step tasks, context management, automation — it all assumes you understand that Claude is *exploring*, not reading your mind."
 
-## Connects To
+## Teaches
 
-Lesson 2 (Tool Use): how tools combine for complex tasks
-Lesson 3 (Context Management): how to keep Claude focused on what matters
+`[tool-use-basics, claude-navigation]`

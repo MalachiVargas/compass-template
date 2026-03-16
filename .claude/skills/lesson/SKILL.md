@@ -7,9 +7,11 @@ description: Run an interactive lesson in the Compass course. Use when the user 
 
 ## Before Starting
 
-1. **Read `memory/user_profile.md`** — get their dream project, tech background, Claude Code experience, and what excites them.
+IMPORTANT: All progress tracking is done exclusively via `memory/progress.md` in the project root. Do NOT write lesson progress to auto-memory. If you detect conflicting progress data in auto-memory, prefer `memory/progress.md` and correct auto-memory to point here.
 
-2. **Read `memory/progress.md`** — get `current_course` (directory path) and the course's `current_lesson` and `status`. If no progress file exists, start at course `courses/01-claude-code`, lesson 1.
+1. **Read `memory/user_profile.md`** — get their background, goals, and what excites them.
+
+2. **Read `memory/progress.md`** — get `current_course` (directory path) and the course's `current_lesson`, `status`, `difficulty_tier`, and `last_session`. If no progress file exists, start at lesson 1 of the first available course in `courses/`.
 
 3. **Read `{current_course}/course.md`** — get the lesson file path for `current_lesson` from the lessons table.
 
@@ -17,7 +19,11 @@ description: Run an interactive lesson in the Compass course. Use when the user 
 
 5. If `status` is `in_progress`, tell the user briefly where they left off based on `notes`, then continue. If `not_started`, begin fresh.
 
-6. **Immediately update `memory/progress.md`** — set `status: in_progress` for this lesson so a mid-session quit can be detected next time.
+6. **Immediately update `memory/progress.md`** — set `status: in_progress` for this lesson and update `last_session` to today's date.
+
+**Session gap detection:** After reading `last_session`, compare it to today's date (available in system context):
+- Gap 7–13 days: open with a brief recap of where they left off before continuing.
+- Gap 14+ days: run a quick warmup — ask one question that revisits the Big Idea from the last completed lesson before starting the new one.
 
 ---
 
@@ -27,7 +33,12 @@ description: Run an interactive lesson in the Compass course. Use when the user 
 One or two sentences. Connect it to what they told you they care about. Make it feel relevant, not academic.
 
 ### 2. Assign the task
-Pick a task from the lesson file that fits the user's experience level. Adapt it to their dream project — same concept, their context.
+Before picking a task tier:
+1. Read `difficulty_tier` from progress.md for the current course.
+2. If empty, infer from user profile (no prior experience with the subject → `beginner`; some prior use → `intermediate`; fluent/power user → `advanced`) and write it to progress.md now.
+3. Use the stored tier to select Beginner / Intermediate / Advanced task from the lesson file.
+
+Adapt the task to their dream project — same concept, their context.
 
 Give only enough context to understand what to do. Don't explain the concept first. Let them encounter it.
 
@@ -43,14 +54,26 @@ When your answer comes from the lesson's source material, teach from there. When
 Once the task is done (or they've gotten far enough), surface what they just learned. Name the concept. Connect it to the bigger picture.
 
 ### 6. Comprehension check
-Before advancing, ask one short question that surfaces whether the lesson's Big Idea actually landed — not fact recall, but applied understanding. Derive it from the Big Idea or Debrief in the lesson file. A sentence or two is enough. If they're off, gently redirect. Don't quiz-bowl them — one question, then move on.
+Before advancing, ask one short question that surfaces whether the lesson's Big Idea actually landed — not fact recall, but applied understanding. Derive it from the Big Idea or Debrief in the lesson file. A sentence or two is enough. Don't quiz-bowl them — one question, then move on.
+
+After their answer, record the outcome:
+- Answered clearly and correctly → `comprehension: high`
+- Needed a redirect but got there → `comprehension: medium`
+- Significantly off → `comprehension: low`; ask: "That one felt a bit fuzzy — want to dig into it more or keep moving?" Let them decide.
 
 ### 7. Advance
 Ask if they're ready to move on. If yes, update `memory/progress.md`:
 - Increment `current_lesson`
-- Add completed lesson to `completed`
+- Add completed lesson entry to `completed` with this shape:
+  ```yaml
+  - lesson: <number>
+    tier: <difficulty_tier>
+    comprehension: <high|medium|low>
+    concepts: <list from ## Teaches in the lesson file>
+    notes: "<brief note on how it went>"
+  ```
+- Read `## Teaches` from the lesson file and append those concept strings to `mastered_concepts` (skip any already present)
 - Set `status: not_started`
-- Add a brief note on how it went
 
 Give a one-sentence preview of the next lesson. Ask if they want to go now or come back later.
 

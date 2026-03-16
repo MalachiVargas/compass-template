@@ -71,6 +71,6 @@ Then ask just this: "Is there one thing from the course you want to go deeper on
 
 Whatever they say — that's the next conversation.
 
-## Connects To
+## Teaches
 
-Lesson 1 (Architecture): the full picture of how Claude navigates, thinks, and plans
+`[extended-reasoning, plan-mode]`

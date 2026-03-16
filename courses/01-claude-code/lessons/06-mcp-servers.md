@@ -63,7 +63,6 @@ Yes — the protocol is open and documented. If you have an internal tool or API
 
 "MCP is the bridge between Claude and the rest of your world. What you just did — calling out to an external system from inside Claude Code — is what turns this from a code editor extension into something that can actually run parts of your workflow. The mental model shift is: Claude isn't just inside your codebase anymore. It can be wherever you give it access to be."
 
-## Connects To
+## Teaches
 
-Lesson 7 (GitHub Integration): a specific, high-value MCP use case
-Lesson 5 (Custom Commands): combining commands with MCP calls for full workflow automation
+`[mcp-servers, tool-extension]`

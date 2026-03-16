@@ -74,7 +74,6 @@ When the next step requires a decision that affects the outcome, Claude pauses. 
 
 "The tool use system is what makes Claude Code an *agent* and not just a smarter autocomplete. You just gave it a goal and watched it figure out the steps. That gap — between stating a goal and watching it execute — is what most developers are still adjusting to. The instinct is to micromanage the steps. The skill is learning to trust the goal-setting and use your energy to describe outcomes clearly."
 
-## Connects To
+## Teaches
 
-Lesson 3 (Context Management): keeping Claude focused as tasks get complex
-Lesson 5 (Custom Commands): packaging multi-step tasks you run repeatedly
+`[tool-chaining, multi-step-tasks]`
