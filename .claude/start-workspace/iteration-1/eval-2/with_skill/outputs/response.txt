@@ -1,3 +1,0 @@
-QUESTION 2 (Coding Background):
-
-"Love it — an email categorization and auto-reply tool is genuinely useful, and there's a lot of interesting territory there. Now tell me about your coding background — what languages or tools do you actually reach for when you sit down to build something?"
