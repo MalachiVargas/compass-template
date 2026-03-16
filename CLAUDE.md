@@ -42,3 +42,14 @@ Courses live in `courses/`. Each course has a `course.md` manifest and individua
 1. Read `memory/user_profile.md` and `memory/progress.md`.
 2. If no profile exists, run `/start` to onboard.
 3. If profile exists, resume from `current_lesson` in the current course — briefly recap and ask if they're ready to continue.
+
+---
+
+## Memory System
+
+**IMPORTANT: All learner memory for this project lives in the in-repo `memory/` folder, NOT in the auto-memory system.**
+
+- User profile: `memory/user_profile.md`
+- Progress tracking: `memory/progress.md`
+- Do NOT write learner state to `~/.claude/projects/*/memory/`. That system is not used here.
+- When saving or reading profile, progress, or course state, always use the `memory/` folder in this repo.
